@@ -14,7 +14,7 @@ services:
       - "5555:5555"
     restart: always
     volumes:
-      - proxypool/crawlers/private:/app/proxypool/crawlers/private
+      - ./proxypool/crawlers/private:/app/proxypool/crawlers/private
     environment:
       REDIS_HOST: redis4proxypool
       TEST_URL: https://www.dcard.tw
