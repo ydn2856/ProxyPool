@@ -8,7 +8,6 @@ services:
     restart: unless-stopped
   proxypool:
     build: .
-    image: "germey/proxypool"
     container_name: proxypool
     ports:
       - "5555:5555"
