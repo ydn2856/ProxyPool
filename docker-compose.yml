@@ -17,3 +17,5 @@ services:
       - proxypool/crawlers/private:/app/proxypool/crawlers/private
     environment:
       REDIS_HOST: redis4proxypool
+      TEST_URL: https://www.dcard.tw
+      REDIS_KEY: proxies:dcard
